@@ -2,6 +2,12 @@
   "name": "ts-calculator",
   "version": "1.0.0",
   "description": "Simple string calculator in Typescript",
+  "scripts": {
+    "test": "tsd"
+  },
+  "devDependencies": {
+    "tsd": "^0.28.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/silas-joekel/ts-calculator.git"
