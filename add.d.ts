@@ -1,4 +1,4 @@
-type Increment<N extends `${number}`> =
+export type Increment<N extends `${number}`> =
     N extends "-1" ?
     "0" :
     N extends `-${infer I extends `${number}`}` ?
@@ -27,7 +27,7 @@ type Increment<N extends `${number}`> =
     `${Increment<P>}0` :
     "10";
 
-type Decrement<N extends `${number}`> =
+export type Decrement<N extends `${number}`> =
     N extends `-${infer I extends `${number}`}` ?
         `-${Increment<I>}` :
     N extends `${infer P extends string}1` ?
@@ -54,7 +54,7 @@ type Decrement<N extends `${number}`> =
         `${Decrement<P>}9` :
     "-1";   
 
-type Add<N1 extends `${number}`, N2 extends `${number}`> = N2 extends "0" ?
+export type Add<N1 extends `${number}`, N2 extends `${number}`> = N2 extends "0" ?
     N1 :
     N2 extends `-${number}` ?
         Add<Decrement<N1>, Increment<N2>> :
