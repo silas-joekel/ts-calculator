@@ -1,0 +1,24 @@
+{
+  "name": "ts-calculator",
+  "version": "1.0.0",
+  "description": "Simple string calculator in Typescript",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silas-joekel/ts-calculator.git"
+  },
+  "keywords": [
+    "Typescript",
+    "Generics",
+    "Calculator",
+    "Conditional Types",
+    "Type Inference",
+    "Template Literal Types",
+    "tsd",
+    "Abstract Syntax Tree",
+    "AST",
+    "Parser"
+  ],
+  "author": "Silas Jökel",
+  "license": "MIT",
+  "homepage": "https://github.com/silas-joekel/ts-calculator#readme"
+}
